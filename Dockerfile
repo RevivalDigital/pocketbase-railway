@@ -1,4 +1,4 @@
-FROM ghcr.io/muchobien/pocketbase:0.22.0
+FROM ghcr.io/muchobien/pocketbase:latest
 
 # Override entrypoint bawaan image
 ENTRYPOINT []
