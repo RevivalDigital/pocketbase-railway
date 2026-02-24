@@ -1,11 +1,9 @@
-FROM ghcr.io/muchobien/pocketbase:latest
+FROM ghcr.io/muchobien/pocketbase:0.22.0
 
-ENV PORT=8090
+# Override entrypoint bawaan image
+ENTRYPOINT []
 
-# Copy entrypoint
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
-EXPOSE 8090
 
 CMD ["/entrypoint.sh"]
